@@ -13,13 +13,15 @@
         <div class="container">
             <div class="col s12">
                 <div class="row">
-                    <h1 class="center-align"><i>WORD COUNTER</i></h1>
+                    <h1 class="center-align"><i><a href="/">WORD COUNTER</a></i></h1>
                     <div class="col s6 offset-s3">
+                         <div class="card-panel light-blue lighten-5">
                         {% if repeats is not empty%}
                          <h3><i>Your sentence:</i></h3><h4>{{ inputs.0 }}</h4>
                          <h3><i>Your word:</i></h3><h4>{{ inputs.1 }}</h4>
                          <h3><i>Your repeats:</i></h3><h4>{{ repeats }}</h4>
                         {% endif %}
+                        </div>
                     </div>
                 </div>
 

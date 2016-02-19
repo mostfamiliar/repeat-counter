@@ -29,10 +29,17 @@ class  RepeatCounter {
         $stringNoPunc = preg_replace('/[^a-z0-9]+/i', " ", $string_input);
 
         $stringToLower = strtolower($stringNoPunc);
+
         $wordToLower = strtolower($word_input);
 
+
+
         $string_array = explode(" ", $stringToLower);
+
+        $newStr = preg_match(preg_quote($wordToLower + '/[s]\b/'), $stringToLower, $matches);
+        var_dump($newStr);
         $count = "";
+
 
         foreach($string_array as $string) {
             if ($wordToLower == $string) {

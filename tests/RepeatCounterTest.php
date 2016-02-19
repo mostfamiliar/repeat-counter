@@ -9,7 +9,6 @@ class  RepeatCounterTest  extends PHPUnit_Framework_TestCase {
         $word_input = "rain";
         $new_countRepeats = new RepeatCounter("rain", "rain");
 
-
         //act
         $result = $new_countRepeats->countRepeats($string_input, $word_input);
 
@@ -23,7 +22,6 @@ class  RepeatCounterTest  extends PHPUnit_Framework_TestCase {
         $string_input = "I want to go to the store after school today";
         $word_input = "to";
         $new_countRepeats = new RepeatCounter("I want to go to the store after school today", "to");
-
 
         //act
         $result = $new_countRepeats->countRepeats($string_input, $word_input);
@@ -39,7 +37,6 @@ class  RepeatCounterTest  extends PHPUnit_Framework_TestCase {
         $word_input = "record";
         $new_countRepeats = new RepeatCounter("I listened to that record yesterday and then I brought it to the party. Do you have that record? It's a really good recording.", "record");
 
-
         //act
         $result = $new_countRepeats->countRepeats($string_input, $word_input);
 
@@ -47,6 +44,18 @@ class  RepeatCounterTest  extends PHPUnit_Framework_TestCase {
         $this->assertEquals(2, $result);
     }
 
+    function test_countRepeats_plurals() {
 
+        //arrange
+        $string_input = "I like blankets.";
+        $word_input = "blanket";
+        $new_countRepeats = new RepeatCounter("I listened to that record yesterday and then I brought it to the party. Do you have that record? It's a really good recording.", "record");
+
+        //act
+        $result = $new_countRepeats->countRepeats($string_input, $word_input);
+
+        //assert
+        $this->assertEquals(1, $result);
+    }
 }
- ?>
+?>
