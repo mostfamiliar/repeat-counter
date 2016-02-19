@@ -2,4 +2,4 @@
 
  2. If the user inputs the sentence "I want to go to the store after school today", and the word "to", the program should output the number 2 for two occurrences of the word "to". I chose the sentence above because I wanted an example with two instances of a word to test.
 
- 3. If the user inputs the paragraph "I listened to that record yesterday and then I brought it to the party. Do you have that record? It's a really good recording." and the word "record", the program should output the number 2 for two occurrences of the word "record". I chose the sentence above because I wanted an example with a partial word to make sure it would check for full word matches only.
+ 3. If the user inputs the paragraph "I listened to that record yesterday and then I brought it to the party. Do you have that record? It's a really good recording." and the word "record", the program should output the number 2 for two occurrences of the word "record". I chose the sentence above because I wanted an example with a partial word to make sure it would check for full word matches only. (Also adds punctuation and capital letters.)
