@@ -30,8 +30,15 @@ class  RepeatCounter {
         $stringToLower = strtolower($stringNoPunc);
         $wordToLower = strtolower($word_input);
         $string_array = explode(" ", $stringToLower);
-        $pluralCount = preg_match_all("/$word_input/", $stringToLower);
-        $count = $pluralCount;
+        $pluralCount = preg_match_all("/\b($word_input)+[s]\b/i", $stringToLower);
+
+        if ($pluralCount > 0) {
+            $count = $pluralCount;
+
+        } else {
+            $count = 0;
+        }
+
 
         foreach($string_array as $string) {
             if ($wordToLower == $string) {

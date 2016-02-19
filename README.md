@@ -30,6 +30,4 @@ _Have not tested the program with numerical input, may behave unpredictably._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
 Copyright (c) 2015 **_Torrence Stratton_**
