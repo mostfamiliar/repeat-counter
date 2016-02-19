@@ -14,5 +14,12 @@
 
     });
 
+    $app->get("/counter", function() use ($app) {
+        $new_repeatCounter = new RepeatCounter;
+        $new_repeatCounter->countRepeats($_GET['sentence_input'], $_GET['word_input']);
+        return $app['twig']->render('counter.html.twig', array('repeats'=>$new_repeatCounter));
+
+    });
+
     return $app;
  ?>

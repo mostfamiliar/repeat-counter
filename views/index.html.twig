@@ -11,32 +11,35 @@
     </head>
     <body>
         <div class="container">
-            <div class="col s2">
-            </div>
-
-            <div class="col s8">
+            <form action="/counter" method="get" class="col s12">
                 <div class="row">
                     <h1 class="center-align"><i>WORD COUNTER</i></h1>
-                    <form action="/" method="get">
-                        <div class="input-field col s6 .center-align">
+                </div>
+                <div class="row">
+                        <div class="input-field col s6 offset-s2">
                              <i class="material-icons prefix">mode_edit</i>
-                             <input placeholder="Text here" type="text" class="validate">
+                             <input placeholder="Text here" name="sentence_input" type="text" class="validate">
                              <label for="first_name">Sentence or phrase</label>
                         </div>
-                        <div class="input-field col s2 .center-align">
-                             <i class="material-icons prefix">account_circle</i>
-                             <input placeholder="Text here" type="text" class="validate">
+                        <div class="input-field col s2">
+                             <input placeholder="Text here" name="word_input"
+                             type="text" class="validate">
                              <label for="first_name">Word</label>
                         </div>
                 </div>
-                <div class="input-field col s2">
-                <a class="waves-effect waves-light btn center-align"><i>SUBMIT<i></a>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="center-align">
+                        <button type="submit"><a class="waves-effect waves-light btn"> <i>SUBMIT<i></a></button>
+                        </div>
+                    </div>
                 </div>
             </form>
 
             </div>
 
-            <div class="col s2">
+            <div class="col s4">
             </div>
     </body>
 </html>
