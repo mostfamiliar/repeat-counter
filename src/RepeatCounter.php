@@ -36,10 +36,10 @@ class  RepeatCounter {
 
         $string_array = explode(" ", $stringToLower);
 
-        $newStr = preg_match(preg_quote($wordToLower + '/[s]\b/'), $stringToLower, $matches);
-        var_dump($newStr);
-        $count = "";
+        $pluralCount = preg_match_all("/$word_input/", $stringToLower);
 
+        $count = $pluralCount;
+        echo $count;
 
         foreach($string_array as $string) {
             if ($wordToLower == $string) {
