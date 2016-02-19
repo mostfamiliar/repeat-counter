@@ -24,6 +24,7 @@ class  RepeatCounter {
     function getWord() {
         return $this->word_input;
     }
+
     function countRepeats($string_input, $word_input) {
         $stringNoPunc = preg_replace('/[^a-z0-9]+/i', " ", $string_input);
 
@@ -31,7 +32,7 @@ class  RepeatCounter {
         $wordToLower = strtolower($word_input);
 
         $string_array = explode(" ", $stringToLower);
-        $count = 0;
+        $count = "";
 
         foreach($string_array as $string) {
             if ($wordToLower == $string) {

@@ -8,16 +8,19 @@
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path'=>__DIR__."/../views"
     ));
-
+    $app['debug']=true;
     $app->get("/", function() use ($app) {
         return $app['twig']->render('index.html.twig');
 
     });
 
     $app->get("/counter", function() use ($app) {
-        $new_repeatCounter = new RepeatCounter;
-        $new_repeatCounter->countRepeats($_GET['sentence_input'], $_GET['word_input']);
-        return $app['twig']->render('counter.html.twig', array('repeats'=>$new_repeatCounter));
+        $sentence = ($_GET['sentence_input']);
+        $word = ($_GET['word_input']);
+        $new_repeatCounter = new RepeatCounter($sentence, $word);
+        $newCounts = $new_repeatCounter->countRepeats($sentence, $word);
+        $outputArray = array($sentence, $word);
+        return $app['twig']->render('counter.html.twig', array('repeats'=>$newCounts, 'inputs'=>$outputArray));
 
     });
 
