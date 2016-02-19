@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
 
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <div class="container">
-            <form action="/counter" method="get" class="col s12">
-                <div class="row">
-                    <h1 class="center-align"><i>WORD COUNTER</i></h1>
-                </div>
-                <div class="row">
-                        <div class="input-field col s6 offset-s2">
-                             <i class="material-icons prefix">mode_edit</i>
-                             <input placeholder="Text here" name="sentence_input" type="text" class="validate">
-                             <label for="first_name">Sentence or phrase</label>
-                        </div>
-                        <div class="input-field col s2">
-                             <input placeholder="Text here" name="word_input"
-                             type="text" class="validate">
-                             <label for="first_name">Word</label>
-                        </div>
-                </div>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/counter" method="get" class="col s12">
 
-                <div class="row">
-                    <div class="input-field col s12">
-                        <div class="center-align">
-                        <button type="submit" class="waves-effect waves-light btn light-blue"> <i>SUBMIT<i></button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+        <div class="row">
+            <h1 class="center-align"><i>WORD COUNTER</i></h1>
+        </div>
 
-            </div>
+        <div class="row">
+          <div class="input-field col s6 offset-s2">
+               <i class="material-icons prefix">mode_edit</i>
+               <input placeholder="Text here" name="sentence_input" type="text" class="validate" required>
+               <label for="first_name">Sentence or phrase</label>
+          </div>
+          <div class="input-field col s2">
+               <input placeholder="Text here" name="word_input"
+               type="text" class="validate" required>
+               <label for="first_name">Word</label>
+          </div>
+        </div>
 
-            <div class="col s4">
-            </div>
-    </body>
+        <div class="row">
+          <div class="input-field col s12">
+              <div class="center-align">
+              <button type="submit" class="waves-effect waves-light btn light-blue"> <i>SUBMIT<i></button>
+              </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </body>
 </html>

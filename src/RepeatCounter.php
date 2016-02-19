@@ -27,19 +27,11 @@ class  RepeatCounter {
 
     function countRepeats($string_input, $word_input) {
         $stringNoPunc = preg_replace('/[^a-z0-9]+/i', " ", $string_input);
-
         $stringToLower = strtolower($stringNoPunc);
-
         $wordToLower = strtolower($word_input);
-
-
-
         $string_array = explode(" ", $stringToLower);
-
         $pluralCount = preg_match_all("/$word_input/", $stringToLower);
-
         $count = $pluralCount;
-        echo $count;
 
         foreach($string_array as $string) {
             if ($wordToLower == $string) {

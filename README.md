@@ -1,41 +1,35 @@
-# _{Application Name}_
+# _WORD COUNTER_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Counts occurrences of word in user given string, 2/19/2015_
 
-#### By _**{List of contributors}**_
+#### By _**Torrence Stratton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application takes user input in the form of a sentence, phrase, or word as well as a corresponding word and outputs the number of times said word is in the sentence, phrase, or word._
 
 ## Setup/Installation Requirements
 
 * _Clone the Repository_
-* _in your terminal, run  "composer install"   to get silex and twig_
+* _Add .gitignore file to repository with vendor/ intact in the file_
+* _in your terminal, run  "composer install" to get silex and twig operation_
 * _start your php sever in the "web" folder_
-* _x _
-* _x _
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _open browser to localhost:8000_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Have not tested the program with numerical input, may behave unpredictably._
 
 ## Technologies Used
 
-_
 * _Composer_
 * _Twig_
 * _Silex_
 * _PHP_
+* _Atom_
 
 ### License
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2015 **_{List of contributors or company name}_**
+Copyright (c) 2015 **_Torrence Stratton_**

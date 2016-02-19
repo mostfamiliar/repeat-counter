@@ -2,6 +2,7 @@
 require_once "src/RepeatCounter.php";
 
 class  RepeatCounterTest  extends PHPUnit_Framework_TestCase {
+    
     function test_countRepeats_oneWord() {
 
         //arrange

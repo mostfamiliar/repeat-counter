@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <head>
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <meta charset="utf-8">
+    <title>WORD COUNTER</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="col s12">
+              <div class="row">
+                  <h1 class="center-align"><i><a href="/">WORD COUNTER</a></i></h1>
+                  <div class="col s6 offset-s3">
+                       <div class="card-panel light-blue lighten-5">
+                      {% if repeats is not empty%}
+                       <h3><i>Your sentence:</i></h3><h4>{{ inputs.0 }}</h4>
+                       <h3><i>Your word:</i></h3><h4>{{ inputs.1 }}</h4>
+                       <h3><i>Your repeats:</i></h3><h4>{{ repeats }}</h4>
+                      {% endif %}
+                      </div>
+                  </div>
+              </div>
 
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="col s12">
-                <div class="row">
-                    <h1 class="center-align"><i><a href="/">WORD COUNTER</a></i></h1>
-                    <div class="col s6 offset-s3">
-                         <div class="card-panel light-blue lighten-5">
-                        {% if repeats is not empty%}
-                         <h3><i>Your sentence:</i></h3><h4>{{ inputs.0 }}</h4>
-                         <h3><i>Your word:</i></h3><h4>{{ inputs.1 }}</h4>
-                         <h3><i>Your repeats:</i></h3><h4>{{ repeats }}</h4>
-                        {% endif %}
-                        </div>
-                    </div>
-                </div>
+          </div>
 
-            </div>
-
-        </div>
-    </body>
+      </div>
+  </body>
 </html>
